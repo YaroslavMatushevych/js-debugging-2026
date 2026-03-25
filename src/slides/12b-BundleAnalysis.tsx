@@ -46,10 +46,10 @@ export function BundleAnalysisSlide() {
               <div style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text)', marginBottom: 10 }}>What we found in zoopla-web</div>
               <div className="flex-col gap-10">
                 {[
-                  { label: 'realtime-documentation — 1 MB parsed, 130 KB gz', fix: 'internal API docs only — not shipped to real users, chunk is isolated', color: 'var(--yellow)' },
-                  { label: 'victory-core in the client bundle', fix: 'charting lib — check if it can be lazy-loaded or replaced with lighter alternative', color: 'var(--red)' },
-                  { label: 'Optimizely BUILD_TIME_DATAFILE.json — appears twice', fix: 'large JSON included at build time — worth checking for deduplication', color: 'var(--red)' },
-                  { label: '/for-sale: 245 KB gz · map page: 421 KB gz', fix: '200 pages all code-split — Next.js automatic splitting working well', color: 'var(--green)' },
+                  { label: 'realtime-documentation - 1 MB parsed, 130 KB gz', fix: 'internal API docs only - not shipped to real users, chunk is isolated', color: 'var(--yellow)' },
+                  { label: 'victory-core in the client bundle', fix: 'charting lib - check if it can be lazy-loaded or replaced with lighter alternative', color: 'var(--red)' },
+                  { label: 'Optimizely BUILD_TIME_DATAFILE.json - appears twice', fix: 'large JSON included at build time - worth checking for deduplication', color: 'var(--red)' },
+                  { label: '/for-sale: 245 KB gz · map page: 421 KB gz', fix: '200 pages all code-split - Next.js automatic splitting working well', color: 'var(--green)' },
                 ].map(item => (
                   <div key={item.label} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', borderLeft: `3px solid ${item.color}`, paddingLeft: 10 }}>
                     <div>

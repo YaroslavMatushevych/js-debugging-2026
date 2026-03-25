@@ -2,15 +2,15 @@
 
 > Tools, Tricks & Things You Didn't Know Existed
 
-A slide deck built with React + Vite for the **Monthly JS Meetup — March 2026**.
+A slide deck built with React + Vite for the **Monthly JS Meetup - March 2026**.
 
 Covers real debugging cases from production at Zoopla across frontend and backend:
 
-- **Frontend** — spotting unnecessary re-renders with `why-did-you-render` and React Scan
-- **Backend / GraphQL** — tracing slow queries with OpenTelemetry + AWS X-Ray
-- **Node.js profiling** — CPU and memory analysis with `clinic.js` (doctor & flame)
-- **Node.js memory** — heap snapshots, diagnostic reports, memory leak patterns
-- **Bundle analysis** — `@next/bundle-analyzer`
+- **Frontend** - spotting unnecessary re-renders with `why-did-you-render` and React Scan
+- **Backend / GraphQL** - tracing slow queries with OpenTelemetry + AWS X-Ray
+- **Node.js profiling** - CPU and memory analysis with `clinic.js` (doctor & flame)
+- **Node.js memory** - heap snapshots, diagnostic reports, memory leak patterns
+- **Bundle analysis** - `@next/bundle-analyzer`
 
 ## Running locally
 

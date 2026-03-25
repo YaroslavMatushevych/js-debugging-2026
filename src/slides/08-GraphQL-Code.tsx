@@ -10,8 +10,8 @@ export function GraphQLCodeSlide() {
           {/* Left: code diff */}
           <div className="flex-col gap-12">
             <div style={{ background: '#161b22', borderRadius: 6, padding: '14px 18px', fontFamily: 'var(--mono)', fontSize: '0.8rem', color: '#e6edf3', lineHeight: 1.9 }}>
-              <div style={{ color: '#8b949e', marginBottom: 8, fontSize: '0.75rem' }}>addressSearch.ts — BEFORE</div>
-              <div style={{ color: '#f85149' }}>{'// ❌ Called on EVERY search — estimates not shown for months'}</div>
+              <div style={{ color: '#8b949e', marginBottom: 8, fontSize: '0.75rem' }}>addressSearch.ts - BEFORE</div>
+              <div style={{ color: '#f85149' }}>{'// ❌ Called on EVERY search - estimates not shown for months'}</div>
               <div style={{ color: '#f85149' }}>{'const estimatesDTO = await fetchEstimates('}</div>
               <div style={{ color: '#f85149', paddingLeft: 20 }}>{'context.dataSources, addresses'}</div>
               <div style={{ color: '#f85149' }}>{');'}</div>
@@ -20,9 +20,9 @@ export function GraphQLCodeSlide() {
 
               <div style={{ borderTop: '1px solid #30363d', margin: '14px 0' }} />
 
-              <div style={{ color: '#8b949e', marginBottom: 8, fontSize: '0.75rem' }}>getHousePricesSearchResults.ts — AFTER · Yuki Cheung · SR-3955</div>
+              <div style={{ color: '#8b949e', marginBottom: 8, fontSize: '0.75rem' }}>getHousePricesSearchResults.ts - AFTER · Yuki Cheung · SR-3955</div>
               <div style={{ color: '#7ee787' }}>{'const trackedPropertiesDTO = await fetchTrackedProperties(context);'}</div>
-              <div style={{ color: '#8b949e' }}>{'// Note: Estimates not fetched — not shown on HPSRP'}</div>
+              <div style={{ color: '#8b949e' }}>{'// Note: Estimates not fetched - not shown on HPSRP'}</div>
               <div style={{ color: '#7ee787' }}>{'mapPropertiesSearch(address, null, trackedPropertiesDTO, ...)'}</div>
             </div>
 
@@ -52,7 +52,7 @@ export function GraphQLCodeSlide() {
             <div className="card">
               <div className="card-label">classic resolver over-fetching</div>
               <p style={{ fontSize: '0.85rem' }}>
-                The API did its job. The resolver called it. Nobody needed the data. The fix wasn't clever — it was just removing dead code that happened to be an expensive upstream call.
+                The API did its job. The resolver called it. Nobody needed the data. The fix wasn't clever - it was just removing dead code that happened to be an expensive upstream call.
               </p>
             </div>
           </div>

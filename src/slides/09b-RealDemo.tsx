@@ -4,9 +4,9 @@ import { CodeBlock } from '../components/CodeBlock';
 export function RealDemoSlide() {
   type TerminalLine = { type: 'prompt' | 'cmd' | 'out' | 'err' | 'hl' | 'info' | 'success' | 'blank'; text: string };
 
-  const leakyCode = `// ❌ The leaky server — patterns from real incidents
-const requestCache = new Map();  // Global — never cleared
-const eventListeners = [];       // Global — never cleaned
+  const leakyCode = `// ❌ The leaky server - patterns from real incidents
+const requestCache = new Map();  // Global - never cleared
+const eventListeners = [];       // Global - never cleaned
 
 function processRequest(req) {
   const payload = {
@@ -21,7 +21,7 @@ function processRequest(req) {
   return payload;
 }`;
 
-  const fixCode = `// ✓ Fixed — bounded cache + no closure accumulation
+  const fixCode = `// ✓ Fixed - bounded cache + no closure accumulation
 const MAX_CACHE = 100;
 const requestCache = new Map();
 
@@ -71,8 +71,8 @@ function processRequest(req) {
 
           {/* Benchmark results */}
           <div>
-            <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)', marginBottom: 12 }}>autocannon benchmark — actual output from running these two servers</div>
-            <Terminal title="autocannon benchmark — actual output" lines={autocannon} />
+            <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)', marginBottom: 12 }}>autocannon benchmark - actual output from running these two servers</div>
+            <Terminal title="autocannon benchmark - actual output" lines={autocannon} />
           </div>
 
           {/* Stats grid */}
@@ -85,7 +85,7 @@ function processRequest(req) {
             <div style={{ textAlign: 'center', padding: '18px 12px', borderLeft: '3px solid var(--text)', borderRadius: '0 6px 6px 0' }}>
               <div style={{ fontSize: '2.4rem', fontWeight: 700, color: 'var(--text)', lineHeight: 1 }}>54<span style={{ fontSize: '1rem' }}>MB</span></div>
               <div style={{ fontSize: '0.85rem', color: 'var(--dim)', marginTop: 6 }}>heap after 10s</div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--dim)', fontFamily: 'var(--mono)' }}>stable — GC healthy</div>
+              <div style={{ fontSize: '0.8rem', color: 'var(--dim)', fontFamily: 'var(--mono)' }}>stable - GC healthy</div>
             </div>
             <div style={{ textAlign: 'center', padding: '18px 12px', borderLeft: '3px solid var(--red)', background: 'rgba(220,38,38,0.04)', borderRadius: '0 6px 6px 0' }}>
               <div style={{ fontSize: '2.4rem', fontWeight: 700, color: 'var(--red)', lineHeight: 1 }}>866</div>
@@ -100,7 +100,7 @@ function processRequest(req) {
           </div>
 
           <div className="danger-box">
-            <p><span style={{ color: 'var(--red)', fontWeight: 700 }}>Why does throughput collapse?</span> When heap nears its limit, V8's garbage collector runs <em>synchronously</em>, blocking the entire event loop — exactly what happened with ZWeb on weekends. The fix isn't "add more RAM". The fix is finding and eliminating the leak.</p>
+            <p><span style={{ color: 'var(--red)', fontWeight: 700 }}>Why does throughput collapse?</span> When heap nears its limit, V8's garbage collector runs <em>synchronously</em>, blocking the entire event loop - exactly what happened with ZWeb on weekends. The fix isn't "add more RAM". The fix is finding and eliminating the leak.</p>
           </div>
         </div>
       </div>

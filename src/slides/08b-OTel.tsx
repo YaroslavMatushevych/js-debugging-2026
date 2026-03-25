@@ -18,14 +18,14 @@ export function OTelSlide() {
     <div className="slide">
       <div className="slide-inner">
         <div className="section-label">part 02 · backend graphql · opentelemetry + aws x-ray</div>
-        <h2 className="mb-20">OpenTelemetry + X-Ray — minimal setup, full visibility</h2>
+        <h2 className="mb-20">OpenTelemetry + X-Ray - minimal setup, full visibility</h2>
 
         <div className="grid-2" style={{ alignItems: 'start', gap: 32 }}>
 
           {/* Left: setup */}
           <div>
             <div style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--muted)', marginBottom: 10 }}>Setup</div>
-            <Terminal title="instrumentation.ts — Next.js 13.2+" lines={setupLines} />
+            <Terminal title="instrumentation.ts - Next.js 13.2+" lines={setupLines} />
           </div>
 
           {/* Right: the story */}
@@ -59,7 +59,7 @@ export function OTelSlide() {
                 <div className="timeline-content">
                   <div style={{ fontWeight: 600, fontSize: '1rem' }}>Found it</div>
                   <p style={{ fontSize: '1rem' }}>
-                    Resolver calling <span style={{ fontFamily: 'var(--mono)', color: 'var(--red)' }}>Estimates API</span> on <strong>every HPSRP search</strong> — web stopped showing estimates months ago.
+                    Resolver calling <span style={{ fontFamily: 'var(--mono)', color: 'var(--red)' }}>Estimates API</span> on <strong>every HPSRP search</strong> - web stopped showing estimates months ago.
                   </p>
                 </div>
               </div>

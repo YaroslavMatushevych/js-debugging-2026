@@ -5,8 +5,8 @@ export function ReRendersFixSlide() {
         <div className="section-label">part 01 · real bug · zoopla-web</div>
         <h2 className="mb-8">An old workaround that became a bug</h2>
         <p className="mb-20" style={{ maxWidth: 760 }}>
-          React Scan has an <strong>issues badge</strong> — it aggregates React's own <code style={{ fontFamily: 'var(--mono)', fontSize: '0.9em' }}>console.error</code> warnings and shows a persistent count on every page load.
-          That's what surfaced <strong>"Invalid DOM property `fetchpriority`"</strong> on every listing image. Not the re-render overlay — React's own DOM reconciler was throwing the warning. React Scan just made it impossible to ignore.
+          React Scan has an <strong>issues badge</strong> - it aggregates React's own <code style={{ fontFamily: 'var(--mono)', fontSize: '0.9em' }}>console.error</code> warnings and shows a persistent count on every page load.
+          That's what surfaced <strong>"Invalid DOM property `fetchpriority`"</strong> on every listing image. Not the re-render overlay - React's own DOM reconciler was throwing the warning. React Scan just made it impossible to ignore.
         </p>
 
         <div className="flex-col gap-20">
@@ -15,7 +15,7 @@ export function ReRendersFixSlide() {
           <div className="grid-2" style={{ gap: 20, alignItems: 'start' }}>
             <div>
               <div style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--red)', marginBottom: 10 }}>
-                The bug — in 4 places across libs
+                The bug - in 4 places across libs
               </div>
               <div style={{ background: '#161b22', borderRadius: 6, padding: '16px 20px', fontFamily: 'var(--mono)', fontSize: '0.82rem', lineHeight: 1.9, color: '#e6edf3' }}>
                 <div style={{ color: '#6e7681' }}>{'// libs/image/src/lib/image.tsx'}</div>
@@ -29,11 +29,11 @@ export function ReRendersFixSlide() {
               </div>
               <div style={{ marginTop: 10, padding: '10px 14px', background: 'var(--card)', borderRadius: 6, borderLeft: '3px solid var(--red)' }}>
                 <p style={{ fontSize: '0.85rem', marginBottom: 6 }}>
-                  In React 18, <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>fetchPriority</code> (camelCase) broke Jest tests — React Testing Library used <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>ReactDOM.render</code> which didn't support it.
+                  In React 18, <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>fetchPriority</code> (camelCase) broke Jest tests - React Testing Library used <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>ReactDOM.render</code> which didn't support it.
                   So lowercase was used as a workaround. It worked because Next.js patched it internally.
                 </p>
                 <p style={{ fontSize: '0.85rem' }}>
-                  Then the codebase moved to <strong>React 19</strong>, which supports <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>fetchPriority</code> properly. The workaround became a bug — and nobody caught it until React Scan did.
+                  Then the codebase moved to <strong>React 19</strong>, which supports <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>fetchPriority</code> properly. The workaround became a bug - and nobody caught it until React Scan did.
                 </p>
               </div>
             </div>
@@ -52,7 +52,7 @@ export function ReRendersFixSlide() {
               </div>
               <div style={{ marginTop: 10, padding: '10px 14px', background: 'var(--card)', borderRadius: 6, borderLeft: '3px solid var(--text)' }}>
                 <p style={{ fontSize: '0.85rem' }}>
-                  React 19 handles this natively — no patching needed. The LCP fetch priority hint actually reaches the browser.
+                  React 19 handles this natively - no patching needed. The LCP fetch priority hint actually reaches the browser.
                   The fix was already raised as a PR but stalled on the Jest test failures. The issues badge showing on every page load made it undeniable.
                 </p>
               </div>

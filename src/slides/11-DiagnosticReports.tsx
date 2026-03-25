@@ -60,13 +60,13 @@ export function DiagnosticReportsSlide() {
             <div className="card">
               <div className="card-title">what's actually used in production</div>
               <ul className="styled">
-                <li><strong>OTel + APM (Datadog / New Relic)</strong> — covers 95% of incidents automatically. Heap, CPU, GC pause, latency — no manual action needed. Zoopla-graphql already has OTel fully wired</li>
-                <li><strong>Container memory alerts</strong> — ECS/K8s fires before the OOM kill. You react before the process dies</li>
-                <li><strong>Clinic.js</strong> — used locally and in staging to profile (already in this repo). Not run against live prod traffic</li>
-                <li><strong>Diagnostic Reports — break-glass only.</strong> A pod is sick, OTel didn't catch it yet, you can't restart it. One signal, full snapshot, no downtime. Also useful as <code style={{ fontFamily: 'var(--mono)', fontSize: '0.88rem' }}>--report-on-fatalerror</code> — Node writes the report automatically before it crashes</li>
+                <li><strong>OTel + APM (Datadog / New Relic)</strong> - covers 95% of incidents automatically. Heap, CPU, GC pause, latency - no manual action needed. Zoopla-graphql already has OTel fully wired</li>
+                <li><strong>Container memory alerts</strong> - ECS/K8s fires before the OOM kill. You react before the process dies</li>
+                <li><strong>Clinic.js</strong> - used locally and in staging to profile (already in this repo). Not run against live prod traffic</li>
+                <li><strong>Diagnostic Reports - break-glass only.</strong> A pod is sick, OTel didn't catch it yet, you can't restart it. One signal, full snapshot, no downtime. Also useful as <code style={{ fontFamily: 'var(--mono)', fontSize: '0.88rem' }}>--report-on-fatalerror</code> - Node writes the report automatically before it crashes</li>
               </ul>
             </div>
-            <Terminal title="zoopla-graphql — live snapshot (PID 69511)" lines={reportLines} />
+            <Terminal title="zoopla-graphql - live snapshot (PID 69511)" lines={reportLines} />
           </div>
           <div className="flex-col gap-10">
             <CodeBlock filename="report.20260324.190400.69511.0.001.json" lang="json">{reportJson}</CodeBlock>

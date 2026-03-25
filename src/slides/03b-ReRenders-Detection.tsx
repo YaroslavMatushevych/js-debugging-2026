@@ -3,12 +3,12 @@ export function ReRendersDetectionSlide() {
     <div className="slide">
       <div className="slide-inner">
         <div className="section-label">part 01 · tools · wdyr setup</div>
-        <h2 className="mb-20">why-did-you-render — setup</h2>
+        <h2 className="mb-20">why-did-you-render - setup</h2>
 
         <div className="grid-2" style={{ gap: 28, alignItems: 'start' }}>
 
           <div>
-            <div style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--dim)', marginBottom: 10 }}>Step 1 — create <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>src/wdyr.ts</code></div>
+            <div style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--dim)', marginBottom: 10 }}>Step 1 - create <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>src/wdyr.ts</code></div>
             <div style={{ background: '#161b22', borderRadius: 6, padding: '14px 18px', fontFamily: 'var(--mono)', fontSize: '0.9rem', lineHeight: 2, color: '#e6edf3' }}>
               <div style={{ color: '#ff7b72' }}>import <span style={{ color: '#e6edf3' }}>React</span> from <span style={{ color: '#a5d6ff' }}>'react'</span>;</div>
               <div style={{ color: '#6e7681', marginTop: 4 }}>{'// must run before React renders anything'}</div>
@@ -24,10 +24,10 @@ export function ReRendersDetectionSlide() {
           </div>
 
           <div>
-            <div style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--dim)', marginBottom: 10 }}>Step 2 — first import in <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>pages/_app.tsx</code></div>
+            <div style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--dim)', marginBottom: 10 }}>Step 2 - first import in <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>pages/_app.tsx</code></div>
             <div style={{ background: '#161b22', borderRadius: 6, padding: '14px 18px', fontFamily: 'var(--mono)', fontSize: '0.9rem', lineHeight: 2, color: '#e6edf3' }}>
               <div style={{ color: '#f85149' }}>{'// ⚠ must be the very first import'}</div>
-              <div style={{ color: '#8b949e' }}>{'// if not first: React patches too late — some components miss tracking'}</div>
+              <div style={{ color: '#8b949e' }}>{'// if not first: React patches too late - some components miss tracking'}</div>
               <div><span style={{ color: '#ff7b72' }}>import</span> <span style={{ color: '#a5d6ff' }}>'../wdyr'</span>;</div>
             </div>
           </div>

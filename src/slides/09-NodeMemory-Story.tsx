@@ -18,7 +18,7 @@ export function NodeMemoryStorySlide() {
     { type: 'blank',  text: '' },
     { type: 'out',    text: 'Throughput:  374 req/s  (avg)' },
     { type: 'out',    text: 'Latency p99: 3,852ms' },
-    { type: 'err',    text: 'GC running overtime — CPU at 95%' },
+    { type: 'err',    text: 'GC running overtime - CPU at 95%' },
   ];
 
   const fixedLog: TLine[] = [
@@ -36,14 +36,14 @@ export function NodeMemoryStorySlide() {
     { type: 'blank',  text: '' },
     { type: 'hl',     text: 'Throughput:  52,016 req/s  ← 139× faster' },
     { type: 'hl',     text: 'Latency p99: 1ms           ← 3,852× lower' },
-    { type: 'out',    text: 'GC idle — CPU at 12%' },
+    { type: 'out',    text: 'GC idle - CPU at 12%' },
   ];
 
   return (
     <div className="slide">
       <div className="slide-inner">
         <div className="section-label">part 04 · backend node.js · benchmark</div>
-        <h2 className="mb-8">The same leak pattern — Node.js server</h2>
+        <h2 className="mb-8">The same leak pattern - Node.js server</h2>
         <p className="mb-20">Map that never gets cleared, closure pushed to a global array on every request. Ran autocannon -c 50 -d 10 against both on the same machine.</p>
 
         <div className="grid-2" style={{ gap: 24 }}>
@@ -82,7 +82,7 @@ export function NodeMemoryStorySlide() {
         </div>
 
         <div style={{ marginTop: 20, padding: '14px 18px', borderLeft: '3px solid var(--border2)', background: 'var(--card)' }}>
-          <p><strong>Why does throughput collapse?</strong> When heap nears its limit, V8's GC runs synchronously, blocking the event loop — exactly what happened with ZWeb on weekends. Adding more RAM delays the crash. Finding the leak fixes it.</p>
+          <p><strong>Why does throughput collapse?</strong> When heap nears its limit, V8's GC runs synchronously, blocking the event loop - exactly what happened with ZWeb on weekends. Adding more RAM delays the crash. Finding the leak fixes it.</p>
         </div>
       </div>
     </div>

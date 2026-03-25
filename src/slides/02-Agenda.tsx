@@ -46,7 +46,7 @@ export function AgendaSlide() {
         <div style={{ marginTop: 24, borderLeft: '2px solid var(--border2)', paddingLeft: 16 }}>
           <p style={{ fontSize: '0.88rem' }}>
             <strong>All examples are real</strong>
-            <span style={{ color: 'var(--muted)' }}> — production incidents and wins from Zoopla. No made-up demos.</span>
+            <span style={{ color: 'var(--muted)' }}> - production incidents and wins from Zoopla. No made-up demos.</span>
           </p>
         </div>
       </div>

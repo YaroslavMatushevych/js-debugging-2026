@@ -5,7 +5,7 @@ export function ClinicJSSlide() {
         <div className="section-label">part 04 · profiling · real homes-user-service</div>
         <h2 className="mb-8">clinic.js on a real production service</h2>
         <p className="mb-20">
-          Ran all three clinic tools against <code style={{ fontFamily: 'var(--mono)', fontSize: '0.9rem' }}>homes-user-service</code> — the Fastify API that handles Zoopla user accounts, saved searches, and affordability data.
+          Ran all three clinic tools against <code style={{ fontFamily: 'var(--mono)', fontSize: '0.9rem' }}>homes-user-service</code> - the Fastify API that handles Zoopla user accounts, saved searches, and affordability data.
         </p>
 
         <div className="flex-col gap-28">
@@ -15,7 +15,7 @@ export function ClinicJSSlide() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
               <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--border2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>1</div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic doctor — start here, it diagnoses and tells you which tool next</div>
+                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic doctor - start here, it diagnoses and tells you which tool next</div>
                 <code style={{ fontFamily: 'var(--mono)', fontSize: '0.8rem', color: 'var(--muted)' }}>
                   NO_INSIGHT=1 clinic doctor --on-port 'autocannon -c 30 -d 10 localhost:$PORT/health' -- node server.js
                 </code>
@@ -41,7 +41,7 @@ export function ClinicJSSlide() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
               <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--border2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>2</div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic flame — CPU flamegraph, find what's burning cycles</div>
+                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic flame - CPU flamegraph, find what's burning cycles</div>
                 <code style={{ fontFamily: 'var(--mono)', fontSize: '0.8rem', color: 'var(--muted)' }}>
                   NO_INSIGHT=1 clinic flame --on-port 'autocannon -c 30 -d 8 localhost:$PORT/health' -- node server.js
                 </code>
@@ -53,7 +53,7 @@ export function ClinicJSSlide() {
               style={{ width: '100%', borderRadius: 6, border: '1px solid var(--border2)', display: 'block', maxHeight: 280, objectFit: 'cover', objectPosition: 'top' }}
             />
             <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--muted)' }}>
-              Wide bars = functions burning the most CPU. Click "Application" in the legend to filter out node internals and focus only on your code. The towers on the right are the hot paths — drill in to find the exact function.
+              Wide bars = functions burning the most CPU. Click "Application" in the legend to filter out node internals and focus only on your code. The towers on the right are the hot paths - drill in to find the exact function.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export function ClinicJSSlide() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
               <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--border2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>3</div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic heapprofiler — what's being allocated?</div>
+                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic heapprofiler - what's being allocated?</div>
                 <code style={{ fontFamily: 'var(--mono)', fontSize: '0.8rem', color: 'var(--muted)' }}>
                   NO_INSIGHT=1 clinic heapprofiler --on-port 'autocannon -c 20 -d 8 localhost:$PORT/health' -- node server.js
                 </code>
@@ -76,7 +76,7 @@ export function ClinicJSSlide() {
             <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--muted)' }}>
               Retaining tree sorted by biggest allocation. Real homes-user-service output:{' '}
               <code style={{ fontFamily: 'var(--mono)', fontSize: '0.88rem' }}>fastify/lib/validation.js</code>{' '}
-              at the top — Zod schemas allocated per-request instead of compiled once at startup.
+              at the top - Zod schemas allocated per-request instead of compiled once at startup.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export function ClinicJSSlide() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
               <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--border2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>4</div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic bubbleprof — async operation graph</div>
+                <div style={{ fontWeight: 700, fontSize: '1.05rem', color: 'var(--text)' }}>clinic bubbleprof - async operation graph</div>
                 <code style={{ fontFamily: 'var(--mono)', fontSize: '0.8rem', color: 'var(--muted)' }}>
                   NO_INSIGHT=1 clinic bubbleprof --on-port 'autocannon -c 10 -d 8 localhost:$PORT/health' -- node server.js
                 </code>
@@ -97,7 +97,7 @@ export function ClinicJSSlide() {
               style={{ width: '100%', borderRadius: 6, border: '1px solid var(--border2)', display: 'block' }}
             />
             <p style={{ marginTop: 8, fontSize: '0.9rem', color: 'var(--muted)' }}>
-              Each bubble = a group of async operations. Lines = async dependencies. Size = time waiting. Use when CPU is low but the service feels slow — bubbleprof finds the long gaps <em>between</em> operations (e.g. sequential DB calls that could be parallelized).
+              Each bubble = a group of async operations. Lines = async dependencies. Size = time waiting. Use when CPU is low but the service feels slow - bubbleprof finds the long gaps <em>between</em> operations (e.g. sequential DB calls that could be parallelized).
             </p>
           </div>
 

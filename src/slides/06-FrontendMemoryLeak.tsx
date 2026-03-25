@@ -86,7 +86,7 @@ useEffect(() => {
           <div className="callout red">
             <div style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--text)', marginBottom: 4 }}>Alto Core incident</div>
             <p style={{ fontSize: '0.9rem' }}>Chris Boakes tracked <span className="red font-bold">jsHeapSizeUsed</span> above 100MB in production monitoring.
-            Same pattern as demo — Detached DOM nodes + closure leak growing unboundedly over a session.</p>
+            Same pattern as demo - Detached DOM nodes + closure leak growing unboundedly over a session.</p>
           </div>
         </div>
       </div>

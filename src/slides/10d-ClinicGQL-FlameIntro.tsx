@@ -5,7 +5,7 @@ export function ClinicGQL3Slide() {
         <div className="section-label">part 03 · clinic.js · step 3 of 5</div>
         <h2 className="mb-8">How to read a flame graph</h2>
         <p className="mb-20" style={{ maxWidth: 700 }}>
-          Most people see a flame graph and have no idea where to look. Here's the mental model — it takes 2 minutes to get.
+          Most people see a flame graph and have no idea where to look. Here's the mental model - it takes 2 minutes to get.
         </p>
 
         <div className="flex-col gap-20">
@@ -20,7 +20,7 @@ export function ClinicGQL3Slide() {
                 {[
                   {
                     rule: 'X axis = time (CPU samples)',
-                    detail: 'Each sample is a snapshot of what\'s running. The wider a bar, the more CPU samples were captured for that function — i.e. more time spent there.'
+                    detail: 'Each sample is a snapshot of what\'s running. The wider a bar, the more CPU samples were captured for that function - i.e. more time spent there.'
                   },
                   {
                     rule: 'Y axis = call stack depth',
@@ -62,7 +62,7 @@ export function ClinicGQL3Slide() {
                 </div>
               </div>
               <p style={{ fontSize: '0.82rem', marginTop: 10, color: 'var(--muted)' }}>
-                In this example, <code style={{ fontFamily: 'var(--mono)' }}>logsomething()</code> is the hottest leaf — it's where the CPU is actually spending time. Everything below it is just the call chain to get there.
+                In this example, <code style={{ fontFamily: 'var(--mono)' }}>logsomething()</code> is the hottest leaf - it's where the CPU is actually spending time. Everything below it is just the call chain to get there.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export function ClinicGQL3Slide() {
             {[
               {
                 tip: 'Filter to "Application"',
-                detail: 'Click "Application" in the legend. This hides Node.js internals and npm packages — shows only your code. Much less noise.',
+                detail: 'Click "Application" in the legend. This hides Node.js internals and npm packages - shows only your code. Much less noise.',
                 color: 'var(--border2)'
               },
               {

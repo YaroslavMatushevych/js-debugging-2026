@@ -1,7 +1,7 @@
 export function ConsoleLogsSlide() {
   const methods = [
     { method: 'console.log',        color: '#e6edf3', output: 'user clicked button',                     note: 'the classic' },
-    { method: 'console.warn',       color: '#e3b341', output: 'cache miss — falling back to DB',         note: 'yellow in devtools' },
+    { method: 'console.warn',       color: '#e3b341', output: 'cache miss - falling back to DB',         note: 'yellow in devtools' },
     { method: 'console.error',      color: '#f85149', output: 'failed to parse response',                note: 'red + stack trace' },
     { method: 'console.info',       color: '#79c0ff', output: 'server started on :4000',                 note: 'same as log, styled differently' },
     { method: 'console.table',      color: '#7ee787', output: '[{ id: 1, name: "Alice" }, ...]',         note: 'renders objects as a table' },

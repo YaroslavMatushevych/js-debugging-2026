@@ -3,7 +3,7 @@ export function ClinicGQL2Slide() {
     <div className="slide">
       <div className="slide-inner">
         <div className="section-label">part 03 · clinic.js · step 1 of 4</div>
-        <h2 className="mb-20">clinic doctor — what it's telling you</h2>
+        <h2 className="mb-20">clinic doctor - what it's telling you</h2>
 
         <div className="flex-col gap-20">
 
@@ -16,7 +16,7 @@ export function ClinicGQL2Slide() {
           <div style={{ position: 'relative' }}>
             <img
               src="/screenshots/graphql-clinic-doctor-before.png"
-              alt="clinic doctor before fix — sawtooth memory, event loop spikes, CPU at 100%"
+              alt="clinic doctor before fix - sawtooth memory, event loop spikes, CPU at 100%"
               style={{ width: '100%', objectFit: 'contain', borderRadius: 6, border: '2px solid var(--red)', display: 'block' }}
             />
           </div>
@@ -25,21 +25,21 @@ export function ClinicGQL2Slide() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16 }}>
 
             <div style={{ padding: '14px 16px', background: 'var(--card)', borderRadius: 6, borderTop: '3px solid var(--red)' }}>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>Memory — sawtooth</div>
+              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>Memory - sawtooth</div>
               <p style={{ fontSize: '0.85rem' }}>
                 Heap growing then dropping as GC fires, over and over. Constant short-lived allocations being created and thrown away on every request.
               </p>
             </div>
 
             <div style={{ padding: '14px 16px', background: 'var(--card)', borderRadius: 6, borderTop: '3px solid var(--red)' }}>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>Event loop — 139ms floor</div>
+              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>Event loop - 139ms floor</div>
               <p style={{ fontSize: '0.85rem' }}>
-                Not just spikes — the <em>baseline</em> was 139ms. Every request waited behind synchronous work before the event loop could start on it.
+                Not just spikes - the <em>baseline</em> was 139ms. Every request waited behind synchronous work before the event loop could start on it.
               </p>
             </div>
 
             <div style={{ padding: '14px 16px', background: 'var(--card)', borderRadius: 6, borderTop: '3px solid var(--red)' }}>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>CPU — ~100%</div>
+              <div style={{ fontWeight: 700, fontSize: '0.95rem', marginBottom: 6 }}>CPU - ~100%</div>
               <p style={{ fontSize: '0.85rem' }}>
                 Pegged at 100%. Doctor flagged this and said: run <code style={{ fontFamily: 'var(--mono)' }}>clinic flame</code> to find what's burning it.
               </p>
@@ -53,7 +53,7 @@ export function ClinicGQL2Slide() {
             <div>
               <div style={{ fontWeight: 700, fontSize: '0.9rem', marginBottom: 4 }}>Doctor's job is diagnosis, not answers</div>
               <p style={{ fontSize: '0.85rem' }}>
-                It looks at all three signals together and says "this looks like a CPU issue — go run flame" or "this looks like a heap leak — go run heapprofiler". You don't need to guess which tool to use. Doctor does that for you.
+                It looks at all three signals together and says "this looks like a CPU issue - go run flame" or "this looks like a heap leak - go run heapprofiler". You don't need to guess which tool to use. Doctor does that for you.
               </p>
             </div>
           </div>

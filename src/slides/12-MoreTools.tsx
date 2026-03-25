@@ -4,7 +4,7 @@ export function MoreToolsSlide() {
       name: 'React Scan',
       tag: 'NEW 2024',
       tagline: 'Visual re-render overlay for any React app',
-      desc: 'Script tag on any site — prod or dev. Red flashes = re-renders. Shows count + which props changed. Zero config.',
+      desc: 'Script tag on any site - prod or dev. Red flashes = re-renders. Shows count + which props changed. Zero config.',
       cmd: 'npx react-scan@latest http://localhost:3000',
     },
     {
@@ -17,15 +17,15 @@ export function MoreToolsSlide() {
     {
       name: 'Chrome Memory Tab',
       tag: 'built-in',
-      tagline: 'Heap snapshot diffing — find leaked objects',
+      tagline: 'Heap snapshot diffing - find leaked objects',
       desc: 'Take snapshot → interact → take snapshot. Comparison view shows retained DOM nodes, event listeners, closures.',
       cmd: 'DevTools → Memory → Heap Snapshot',
     },
     {
       name: 'Replay.io',
       tag: 'time-travel',
-      tagline: 'Time-travel debugging — record, share, replay',
-      desc: 'Record a browser session as a Replay. Share a URL — anyone opens DevTools at any point in time. No "can\'t reproduce".',
+      tagline: 'Time-travel debugging - record, share, replay',
+      desc: 'Record a browser session as a Replay. Share a URL - anyone opens DevTools at any point in time. No "can\'t reproduce".',
       cmd: 'npm i @replayio/playwright  # or Chrome extension',
     },
     {

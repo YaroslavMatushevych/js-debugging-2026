@@ -12,9 +12,9 @@ export function TakeawaysSlide() {
             <div className="card">
               <div style={{ fontWeight: 700, fontSize: '0.82rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>Frontend</div>
               <ul className="styled">
-                <li><strong>React Scan first</strong> — script tag, 30 seconds, instant visual feedback on any app</li>
-                <li><strong>WDYR</strong> for surgical diagnosis — shows you prev/next props, finds the exact cause</li>
-                <li>Every inline <span className="mono">{'{ }'}</span> in JSX creates a new reference — that's your re-render budget</li>
+                <li><strong>React Scan first</strong> - script tag, 30 seconds, instant visual feedback on any app</li>
+                <li><strong>WDYR</strong> for surgical diagnosis - shows you prev/next props, finds the exact cause</li>
+                <li>Every inline <span className="mono">{'{ }'}</span> in JSX creates a new reference - that's your re-render budget</li>
                 <li>Heap Snapshot + "Objects between snapshots" = find any frontend leak in minutes</li>
               </ul>
             </div>
@@ -35,10 +35,10 @@ export function TakeawaysSlide() {
             <div className="card">
               <div style={{ fontWeight: 700, fontSize: '0.82rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>Node.js memory</div>
               <ul className="styled">
-                <li><strong>clinic doctor</strong> first — it tells you which tool to use next, always</li>
+                <li><strong>clinic doctor</strong> first - it tells you which tool to use next, always</li>
                 <li>GC overdrive is a symptom. <span className="red">Don't add RAM.</span> Find the leak.</li>
                 <li><span className="mono">kill -USR2 &lt;PID&gt;</span> → diagnostic report, zero downtime, built into Node</li>
-                <li>Bounded LRU cache (max N entries) — stops heap growth permanently</li>
+                <li>Bounded LRU cache (max N entries) - stops heap growth permanently</li>
               </ul>
             </div>
 

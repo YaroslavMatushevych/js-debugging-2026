@@ -1,14 +1,17 @@
 export function ReactScanVideoSlide() {
   return (
-    <div className="slide" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
-      <div style={{
-        width: '80%', height: 400,
-        border: '2px dashed var(--border2)',
-        borderRadius: 12,
-        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16,
-      }}>
-        <div style={{ fontSize: '3rem' }}>🎥</div>
-        <div style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--muted)' }}>React Scan — live recording</div>
+    <div className="slide">
+      <div className="slide-inner" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="section-label">part 01 · zoopla-web · react scan</div>
+        <div className="eyebrow" style={{ marginBottom: 16, color: 'var(--text)', fontSize: '1.1rem' }}>🎥 React Scan - usage example</div>
+        <video
+          src="/react-scan-usage.mov"
+          controls
+          autoPlay
+          muted
+          loop
+          style={{ width: '100%', maxHeight: '75vh', objectFit: 'contain', borderRadius: 10, border: '1px solid var(--border2)', display: 'block' }}
+        />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export function QASlide() {
       <div className="slide-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="grid-2" style={{ gap: 48, alignItems: 'start' }}>
 
-          {/* Left — meme + name + QR */}
+          {/* Left - meme + name + QR */}
           <div>
             <div className="eyebrow">end</div>
             <img
@@ -35,7 +35,7 @@ export function QASlide() {
             </div>
           </div>
 
-          {/* Right — resources */}
+          {/* Right - resources */}
           <div className="card" style={{ padding: '12px 16px' }}>
             <div className="card-label">resources</div>
             <div className="flex-col gap-10">
