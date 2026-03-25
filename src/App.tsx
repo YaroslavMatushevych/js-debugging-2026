@@ -23,10 +23,10 @@ import { QASlide } from './slides/14-QA';
 
 const slides = [
   { component: TitleSlide, label: 'Title', section: false },
+  { component: ConsoleLogsSlide, label: 'console.log & friends', section: false },
   { component: Bug1Slide, label: 'A sneaky bug', section: false },
   { component: Bug2Slide, label: 'More than one', section: false },
   { component: BootSlide, label: 'We are here to fix them', section: false },
-  { component: ConsoleLogsSlide, label: 'console.log & friends', section: false },
   { component: ReRendersDetectionSlide, label: 'WDYR setup', section: true },
   { component: WDYRVideoSlide, label: 'WDYR usage example', section: false },
   { component: ReRendersProblemSlide, label: 'Re-renders: what we found', section: false },
