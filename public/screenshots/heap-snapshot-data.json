@@ -1,0 +1,12 @@
+{
+  "before": {
+    "heapMB": "0.52",
+    "nodes": 20787
+  },
+  "after": {
+    "heapMB": "106.87",
+    "nodes": 5036398
+  },
+  "growthMB": "106.35",
+  "nodeGrowth": 5015611
+}
