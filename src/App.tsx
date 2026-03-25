@@ -15,7 +15,7 @@ import { XRaySlide } from './slides/06c-XRay';
 import { GraphQLStorySlide } from './slides/07-GraphQL-Story';
 import { OTelSlide } from './slides/08b-OTel';
 import { ClinicGQL2Slide } from './slides/10c-ClinicGQL-Doctor';
-import { ClinicGQL4Slide } from './slides/10e-ClinicGQL-Flame';
+import { ClinicGQL4Slide, ClinicGQL4AfterSlide } from './slides/10e-ClinicGQL-Flame';
 import { ClinicGQL5Slide } from './slides/10f-ClinicGQL-Fix';
 import { ClinicGQL6Slide } from './slides/10g-ClinicGQL-After';
 import { BundleAnalysisSlide } from './slides/12b-BundleAnalysis';
@@ -38,8 +38,9 @@ const slides = [
   { component: XRaySlide, label: 'X-Ray - what you see', section: false },
   { component: GraphQLStorySlide, label: 'GraphQL Story', section: false },
   { component: ClinicGQL2Slide, label: 'clinic doctor - before', section: false },
-  { component: ClinicGQL4Slide, label: 'clinic flame - before vs after', section: false },
+  { component: ClinicGQL4Slide, label: 'clinic flame - before', section: false },
   { component: ClinicGQL5Slide, label: 'Root cause + fix', section: false },
+  { component: ClinicGQL4AfterSlide, label: 'clinic flame - after', section: false },
   { component: ClinicGQL6Slide, label: 'clinic doctor - after', section: false },
   { component: BundleAnalysisSlide, label: 'Bundle Analysis', section: false },
   { component: QASlide, label: 'Q&A', section: false },

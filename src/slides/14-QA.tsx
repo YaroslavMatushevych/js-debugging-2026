@@ -36,7 +36,7 @@ export function QASlide() {
           </div>
 
           {/* Right - resources */}
-          <div className="card" style={{ padding: '12px 16px' }}>
+          <div className="card" style={{ padding: '14px 18px', marginTop: '60px' }}>
             <div className="card-label">resources</div>
             <div className="flex-col gap-10">
               {links.map(l => (

@@ -17,7 +17,7 @@ export function ClinicGQL2Slide() {
             <img
               src="/screenshots/graphql-clinic-doctor-before.png"
               alt="clinic doctor before fix - sawtooth memory, event loop spikes, CPU at 100%"
-              style={{ width: '100%', objectFit: 'contain', borderRadius: 6, border: '2px solid var(--red)', display: 'block' }}
+              style={{ width: '100%', height: 520, objectFit: 'fill', borderRadius: 6, border: '2px solid var(--red)', display: 'block' }}
             />
           </div>
 

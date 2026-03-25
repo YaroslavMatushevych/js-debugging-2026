@@ -4,7 +4,7 @@ export function ClinicGQL6Slide() {
       <div className="slide-inner">
         <div className="section-label">part 03 · clinic.js · step 4 of 4</div>
         <h2 className="mb-8">clinic doctor - after the fix</h2>
-        <p className="mb-20" style={{ maxWidth: 700 }}>
+        <p className="mb-20" style={{ maxWidth: 700, whiteSpace: 'nowrap' }}>
           Same command, same load. The difference is immediate and obvious.
         </p>
 
@@ -14,7 +14,7 @@ export function ClinicGQL6Slide() {
           <img
             src="/screenshots/graphql-clinic-doctor-after.png"
             alt="clinic doctor after fix - flat memory, no event loop spikes, CPU high but stable"
-            style={{ width: '100%', objectFit: 'contain', borderRadius: 6, border: '2px solid var(--border2)', display: 'block' }}
+            style={{ width: '100%', height: 520, objectFit: 'fill', borderRadius: 6, border: '2px solid var(--border2)', display: 'block' }}
           />
 
           {/* What changed */}

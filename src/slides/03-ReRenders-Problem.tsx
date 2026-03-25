@@ -5,14 +5,14 @@ export function ReRendersProblemSlide() {
         <div className="section-label">part 01 · zoopla-web · real finding</div>
         <h2 className="mb-20">UserProvider - re-rendering the whole app</h2>
 
-        <div className="grid-2" style={{ gap: 28, alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, alignItems: 'start', overflow: 'hidden' }}>
 
           {/* Left - real code + fix */}
           <div className="flex-col gap-16">
 
             <div>
               <div style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--dim)', marginBottom: 10 }}>
-                Real code - <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>libs/user/src/lib/userProvider.tsx</code> · line 295
+                Real code - <code style={{ fontFamily: 'var(--mono)', fontSize: '0.82rem' }}>libs/user/src/lib/userProvider.tsx</code>
               </div>
               <div style={{ background: '#161b22', borderRadius: 6, padding: '16px 18px', fontFamily: 'var(--mono)', fontSize: '0.92rem', lineHeight: 2, color: '#e6edf3' }}>
                 <div style={{ color: '#6e7681' }}>{'// new object on every render'}</div>
@@ -47,14 +47,14 @@ export function ReRendersProblemSlide() {
             <div style={{ padding: '16px 18px', background: 'var(--card)', borderRadius: 8, borderLeft: '3px solid var(--red)' }}>
               <div style={{ marginBottom: 14 }}>
                 <span style={{ fontWeight: 700, fontSize: '1.1rem' }}>What WDYR logged - </span>
-                <span style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--red)', letterSpacing: '-0.03em' }}>478</span>
+                <span style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--red)', letterSpacing: '-0.03em' }}>100+</span>
                 <span style={{ fontSize: '0.82rem', color: 'var(--muted)', marginLeft: 8 }}>re-renders on <code style={{ fontFamily: 'var(--mono)', fontSize: '0.8rem' }}>/to-rent/property/london/</code> · impacts TBT + INP</span>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '160px 44px 1fr', gap: '8px 12px', alignItems: 'baseline' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '140px 40px 1fr', gap: '8px 10px', alignItems: 'baseline' }}>
                 {[
                   { comp: 'UserProvider', count: '6×', why: 'value object recreated on every dispatch' },
-                  { comp: 'Header + Menu', count: '12×', why: 'cascade - wraps _app.tsx, every useUser() consumer follows' },
-                  { comp: 'ListingSlim', count: '~20×', why: 'all 20+ cards re-render together' },
+                  { comp: 'Header + Menu', count: '12×', why: 'cascade from UserProvider' },
+                  { comp: 'ListingSlim', count: '20×', why: 'all 20+ cards re-render together' },
                   { comp: 'SearchResults', count: '4×', why: 'consuming SearchProvider context' },
                 ].map(r => (
                   <>
