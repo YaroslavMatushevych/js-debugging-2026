@@ -5,7 +5,7 @@ export function WDYRVideoSlide() {
         <div className="section-label">part 01 · zoopla-web · wdyr</div>
         <div className="eyebrow" style={{ marginBottom: 16, color: 'var(--text)', fontSize: '1.1rem' }}>🎥 WDYR - usage example</div>
         <video
-          src="/wdyr-usage.mov"
+          src="/wdyr-usage.mp4"
           controls
           autoPlay
           muted

@@ -5,7 +5,7 @@ export function ReactScanVideoSlide() {
         <div className="section-label">part 01 · zoopla-web · react scan</div>
         <div className="eyebrow" style={{ marginBottom: 16, color: 'var(--text)', fontSize: '1.1rem' }}>🎥 React Scan - usage example</div>
         <video
-          src="/react-scan-usage.mov"
+          src="/react-scan-usage.mp4"
           controls
           autoPlay
           muted
